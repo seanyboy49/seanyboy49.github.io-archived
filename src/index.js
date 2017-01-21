@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
+import Navigation from './components/Navigation'
 import App from './components/App';
 import Home from './components/Home';
 import PageNotFound from './components/PageNotFound';
@@ -10,7 +11,7 @@ import ExampleTwoDeepComponent from './components/ExampleTwoDeepComponent';
 
 
 const routes = (
-  <Route path="/" mapMenuTitle="Home" component={App}>
+  <Route path="/" mapMenuTitle="Home" component={Navigation}>
     <IndexRoute component={Home} />
 
     <Route path="example" mapMenuTitle="Example" component={ExampleComponent}>
