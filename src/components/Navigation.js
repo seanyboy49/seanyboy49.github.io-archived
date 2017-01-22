@@ -4,8 +4,8 @@ import { Link } from 'react-router'
 class Navigation extends React.Component{
   render() {
     return(
-      <div>
-        <div className="nav-bar">
+      <div >
+        <div className="nav-bar" style={{"background-color": "#3498db"}}>
             <div className="panel"><Link to="/developer">Developer</Link></div>
             <div className="panel"><Link to="/designer">Designer</Link></div>
             <div className="panel"><Link to="/filmmaker">Filmmaker</Link></div>
