@@ -10,9 +10,7 @@ export default {
 
   module: {
     loaders: [
-      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel' },
-      { test: /\.css$/, loader: 'style!css!'}
-    ],
+      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel' }    ],
   },
 
   resolve: {

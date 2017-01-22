@@ -1,0 +1,30 @@
+{
+  "projects": [{
+    "title": "RFLCT",
+    "description": "RFLCT is a voice activated smart mirror that uses facial recognition to recognize a user and display helpful information in a beautiful inteface.",
+    "date": "September 2016",
+    "service": "IoT",
+    "client": "Dev Bootcamp",
+    "github": "https://github.com/seanyboy49/RFLCTT",
+    "thumbnail": "RFLCT.jpg"
+    },
+    {
+      "title": "Eliza",
+      "description": "Eliza is a Facebook Messenger chatbot built for Hack Against Violence, a weekend hackathon that sought ways to diffuse violence and promote social inclusion across the globe.",
+      "date": "September 2016",
+      "service": "Chatbot",
+      "client": "Hack Against Violence",
+      "github": "https://github.com/seanyboy49/empathy",
+      "thumbnail": "Eliza.jpg"
+    },
+    {
+      "title": "Accomplishe",
+      "description": "ACCOMPLISHE is a web app that helps women track their moments of success, power, and growth in the workplace so that they have a clear sense of what they bring to the table and feel more confident advocating for themselves.",
+      "date": "October 2016",
+      "service": "Web App",
+      "client": "Lady Problems San Francisco Hackathon",
+      "github": "https://github.com/elliedori/accomplishe/tree/master",
+      "thumbnail": "Accomplishe.jpg"
+      }
+  ]
+}

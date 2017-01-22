@@ -6,9 +6,10 @@ class Navigation extends React.Component{
     return(
       <div>
         <div className="nav-bar">
-            <div className="panel"><Link to="/pomodoro">Pomodoro</Link></div>
-            <div className="panel"><Link to="/tags">Tags</Link></div>
-            <div className="panel"><Link to="/logs">Logs</Link></div>
+            <div className="panel"><Link to="/developer">Developer</Link></div>
+            <div className="panel"><Link to="/designer">Designer</Link></div>
+            <div className="panel"><Link to="/filmmaker">Filmmaker</Link></div>
+            <div className="panel"><Link to="/resume">Resume</Link></div>
         </div>
         {this.props.children}
       </div>
