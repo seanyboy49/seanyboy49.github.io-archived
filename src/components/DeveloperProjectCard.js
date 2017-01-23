@@ -1,17 +1,23 @@
 import React from 'react'
 
-const DeveloperProjectCard = (props) =>
-  (
+class DeveloperProjectCard extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    return (
       <div>
         <p>Project Card goes here</p>
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
-        <p>{props.date}</p>
-        <p>{props.service}</p>
-        <p>{props.client}</p>
-        <p>{props.github}</p>
+        <h1>{this.props.title}</h1>
+        <p>{this.props.description}</p>
+        <p>{this.props.date}</p>
+        <p>{this.props.service}</p>
+        <p>{this.props.client}</p>
+        <p>{this.props.github}</p>
       </div>
     )
+  }
+}
 
 
 export default DeveloperProjectCard
