@@ -2,9 +2,24 @@ import React from 'react'
 import DeveloperProjectCard from './DeveloperProjectCard'
 const data = require('../public/projects')
 
-const shows = data
+const projects = data
 const puke = obj => {
   return <pre>{JSON.stringify(obj, 2, ' ')}</pre>
+}
+
+const parseShows = (data) => {
+  data.projects.map((project) => {
+    return `
+      <div>
+        <p>${project.title}</p>
+        <p>${project.description}</p>
+        <p>${project.date}</p>
+        <p>${project.service}</p>
+        <p>${project.client}</p>
+        <p>${project.github}</p>
+      </div>
+      `
+  })
 }
 
 class Developer extends React.Component {
@@ -12,8 +27,18 @@ class Developer extends React.Component {
     return(
       <div>
         <h1>Developer muhhfucker</h1>
-        <DeveloperProjectCard></DeveloperProjectCard>
-          {puke(data)}
+        {projects.projects.map((project) => {
+          return(
+            <div>
+              <p>{project.title}</p>
+              <p>{project.description}</p>
+              <p>{project.date}</p>
+              <p>{project.service}</p>
+              <p>{project.client}</p>
+              <p>{project.github}</p>
+            </div>
+          )
+        })}
       </div>
     )
   }
