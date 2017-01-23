@@ -7,7 +7,7 @@
       "service": "IoT",
       "client": "Dev Bootcamp",
       "github": "https://github.com/seanyboy49/RFLCTT",
-      "thumbnail": "RFLCT.jpg"
+      "thumbnail": "RFLCT.png"
     },
     {
       "title": "Eliza",
@@ -16,7 +16,7 @@
       "service": "Chatbot",
       "client": "Hack Against Violence",
       "github": "https://github.com/seanyboy49/empathy",
-      "thumbnail": "Eliza.jpg"
+      "thumbnail": "Eliza.png"
     },
     {
       "title": "Accomplishe",
@@ -25,16 +25,7 @@
       "service": "Web App",
       "client": "Lady Problems San Francisco Hackathon",
       "github": "https://github.com/elliedori/accomplishe/tree/master",
-      "thumbnail": "Accomplishe.jpg"
-    },
-    {
-      "title": "A Scanner Smartly",
-      "description": "A Scanner Smartly is a React on Rails web and mobile app that uses Amazon and Ebay API's to automatically update Footprint's inventory and online vendor accounts whenever new products go in or out of the store.",
-      "date": "November 2016",
-      "service": "Mobile First Web App",
-      "client": "Footprint",
-      "github": "https://github.com/seanyboy49/AScannerSmartly",
-      "thumbnail": "AScannerSmartly.jpg"
+      "thumbnail": "Accomplishe.png"
     },
     {
       "title": "Github Battle Arena",
@@ -43,7 +34,7 @@
       "service": "Web App",
       "client": "Passion",
       "github": "https://github.com/seanyboy49/Github-Battle-Arena",
-      "thumbnail": "Github-Battle-Arena.jpg"
+      "thumbnail": "Github-Battle-Arena.png"
     },
     {
       "title": "Viddy",
@@ -52,7 +43,7 @@
       "service": "Web App",
       "client": "Passion",
       "github": "https://github.com/seanyboy49/Viddy",
-      "thumbnail": "Viddy.jpg"
+      "thumbnail": "Viddy.png"
     },
     {
       "title": "Caprese",
@@ -61,7 +52,16 @@
       "service": "Web App",
       "client": "Passion",
       "github": "https://github.com/seanyboy49/Caprese",
-      "thumbnail": "Caprese.jpg"
+      "thumbnail": "Caprese.png"
+    },
+    {
+      "title": "Kelvn",
+      "description": "A fun web app for sending annoying text messages to your friends and enemies.",
+      "date": "September 2016",
+      "service": "Web App",
+      "client": "Passion",
+      "github": "https://github.com/seanyboy49/Kelvn",
+      "thumbnail": "Kelvn.png"
     }
   ]
 }

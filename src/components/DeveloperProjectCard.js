@@ -5,9 +5,11 @@ class DeveloperProjectCard extends React.Component {
     super(props)
   }
   render() {
+    console.log(this.props.thumbnail);
     return (
       <div className="Dev-Project-Card">
         <h1>{this.props.title}</h1>
+        <img src={`src/public/developer-images/${this.props.thumbnail}`} className="Project-Card-Image"/>
       </div>
     )
   }
