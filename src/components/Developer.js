@@ -29,14 +29,7 @@ class Developer extends React.Component {
         <h1>Developer muhhfucker</h1>
         {projects.projects.map((project) => {
           return(
-            <div>
-              <p>{project.title}</p>
-              <p>{project.description}</p>
-              <p>{project.date}</p>
-              <p>{project.service}</p>
-              <p>{project.client}</p>
-              <p>{project.github}</p>
-            </div>
+            <DeveloperProjectCard {...project} />
           )
         })}
       </div>
