@@ -1,12 +1,13 @@
 {
-  "projects": [{
-    "title": "RFLCT",
-    "description": "RFLCT is a voice activated smart mirror that uses facial recognition to recognize a user and display helpful information in a beautiful inteface.",
-    "date": "September 2016",
-    "service": "IoT",
-    "client": "Dev Bootcamp",
-    "github": "https://github.com/seanyboy49/RFLCTT",
-    "thumbnail": "RFLCT.jpg"
+  "projects": [
+    {
+      "title": "RFLCT",
+      "description": "RFLCT is a voice activated smart mirror that uses facial recognition to recognize a user and display helpful information in a beautiful inteface.",
+      "date": "September 2016",
+      "service": "IoT",
+      "client": "Dev Bootcamp",
+      "github": "https://github.com/seanyboy49/RFLCTT",
+      "thumbnail": "RFLCT.jpg"
     },
     {
       "title": "Eliza",

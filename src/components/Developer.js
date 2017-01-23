@@ -1,5 +1,5 @@
 import React from 'react'
-
+const data = require('../public/projects')
 
 class Developer extends React.Component {
   render() {
