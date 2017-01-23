@@ -10,9 +10,32 @@
   border: 1px black;
   height: 300px;
   width: 300px;
+  align-items: center;
 }
 
+.Dev-Project-Card h1 {
+  position: absolute;
+  padding: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+
 .Project-Card-Image {
+  display: inline-block;
   width: 300px;
   height: 300px;
+  align-self: center;
+  position: relative;
+}
+
+.Dev-Project-Card:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+
+.Dev-Project-Card:hover h1{
+  transform: scale(1.1);
+  transition: all 0.4s;
+  opacity: 1;
 }
