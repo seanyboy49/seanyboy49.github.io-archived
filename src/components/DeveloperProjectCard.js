@@ -8,7 +8,9 @@ class DeveloperProjectCard extends React.Component {
     console.log(this.props.thumbnail);
     return (
       <div className="Dev-Project-Card">
-        <h1>{this.props.title}</h1>
+        <div className="hidden">
+          <h1>{this.props.title}</h1>
+        </div>
         <img src={`src/public/developer-images/${this.props.thumbnail}`} className="Project-Card-Image"/>
       </div>
     )

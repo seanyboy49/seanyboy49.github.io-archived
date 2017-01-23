@@ -13,12 +13,16 @@
   align-items: center;
 }
 
-.Dev-Project-Card h1 {
+.hidden {
+  width: inherit;
+  height: inherit;
   position: absolute;
   padding: 0;
   z-index: 1;
   opacity: 0;
+  background-color: #ecf0f1;
 }
+
 
 
 .Project-Card-Image {
@@ -34,8 +38,8 @@
   transition: all 0.4s;
 }
 
-.Dev-Project-Card:hover h1{
+.Dev-Project-Card:hover .hidden{
   transform: scale(1.1);
   transition: all 0.4s;
-  opacity: 1;
+  opacity: 0.5;
 }
