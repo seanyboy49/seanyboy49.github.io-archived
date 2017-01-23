@@ -1,4 +1,15 @@
-.Dev-Project-Card {
+.Dev-Project-Card-Container {
   display: flex;
-  border: 1px black solid;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Dev-Project-Card {
+  margin: 20px;
+  display: flex;
+  flex-direction: row-reverse;;
+  border: 1px black;
+  height: 300px;
+  width: 300px;
+  background-color: #e74c3c;
 }
