@@ -5,9 +5,8 @@
 }
 
 .Dev-Project-Card {
+  text-align: center;
   margin: 20px;
-  display: flex;
-  flex-direction: row-reverse;;
   border: 1px black;
   height: 300px;
   width: 300px;

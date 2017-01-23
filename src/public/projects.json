@@ -26,6 +26,42 @@
       "client": "Lady Problems San Francisco Hackathon",
       "github": "https://github.com/elliedori/accomplishe/tree/master",
       "thumbnail": "Accomplishe.jpg"
-      }
+    },
+    {
+      "title": "A Scanner Smartly",
+      "description": "A Scanner Smartly is a React on Rails web and mobile app that uses Amazon and Ebay API's to automatically update Footprint's inventory and online vendor accounts whenever new products go in or out of the store.",
+      "date": "November 2016",
+      "service": "Mobile First Web App",
+      "client": "Footprint",
+      "github": "https://github.com/seanyboy49/AScannerSmartly",
+      "thumbnail": "AScannerSmartly.jpg"
+    },
+    {
+      "title": "Github Battle Arena",
+      "description": "A Scanner Smartly is a React on Rails web and mobile app that uses Amazon and Ebay API's to automatically update Footprint's inventory and online vendor accounts whenever new products go in or out of the store.",
+      "date": "November 2016",
+      "service": "Web App",
+      "client": "Passion",
+      "github": "https://github.com/seanyboy49/Github-Battle-Arena",
+      "thumbnail": "Github-Battle-Arena.jpg"
+    },
+    {
+      "title": "Viddy",
+      "description": "A Scanner Smartly is a React on Rails web and mobile app that uses Amazon and Ebay API's to automatically update Footprint's inventory and online vendor accounts whenever new products go in or out of the store.",
+      "date": "November 2016",
+      "service": "Web App",
+      "client": "Passion",
+      "github": "https://github.com/seanyboy49/Viddy",
+      "thumbnail": "Viddy.jpg"
+    },
+    {
+      "title": "Caprese",
+      "description": "A Scanner Smartly is a React on Rails web and mobile app that uses Amazon and Ebay API's to automatically update Footprint's inventory and online vendor accounts whenever new products go in or out of the store.",
+      "date": "December 2016",
+      "service": "Web App",
+      "client": "Passion",
+      "github": "https://github.com/seanyboy49/Caprese",
+      "thumbnail": "Caprese.jpg"
+    }
   ]
 }

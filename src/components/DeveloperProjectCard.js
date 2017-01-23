@@ -7,7 +7,6 @@ class DeveloperProjectCard extends React.Component {
   render() {
     return (
       <div className="Dev-Project-Card">
-        <p>Project Card goes here</p>
         <h1>{this.props.title}</h1>
       </div>
     )
