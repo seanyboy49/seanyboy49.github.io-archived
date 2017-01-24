@@ -18,11 +18,16 @@ class ProjectModal extends React.Component {
   }
   createMarkup(props) {
     return `
-    <h1>${props.title}</h1>
-    <p>${props.description}</p>
-    <p>Date: ${props.date}</p>
-    <p>Client: ${props.client}</p>
-    <p>Service: ${props.service}</p>
+    <div class="Modal-Container">
+      <h1>${props.title}</h1>
+      <img src=src/public/developer-images/${props.thumbnail} class="Project-Card-Image"/>
+      <p>${props.description}</p>
+      <ul>
+        <li><b>Date:</b> ${props.date}</li>
+        <li><b>Client:</b> ${props.client}</li>
+        <li><b>Service:</b> ${props.service}</li>
+      </ul>
+    </div>
     `
   }
 

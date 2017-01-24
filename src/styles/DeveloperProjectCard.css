@@ -13,6 +13,7 @@
   align-items: center;
 }
 
+/*Container for hover overlay for developer project cards*/
 .hidden {
   width: inherit;
   height: inherit;
@@ -44,14 +45,33 @@
   opacity: 0.5;
 }
 
+/*Modal Styling*/
+
 .Modal-Open {
   max-height: calc(100% - 100px);
   position: fixed;
     top: 50%;
     left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.8;
+  opacity: 0.9;
   background-color: #ecf0f1;
   z-index: 1;
   overflow: scroll;
+}
+
+.Modal-Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Modal-Container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Modal-Container li {
+  margin: 5px;
 }
