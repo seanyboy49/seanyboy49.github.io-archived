@@ -43,3 +43,9 @@
   transition: all 0.4s;
   opacity: 0.5;
 }
+
+.Modal-Open {
+  height: 50px;
+  width: 50px;
+  background-color: #ecf0f1;
+}

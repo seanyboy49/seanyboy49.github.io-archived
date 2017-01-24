@@ -1,5 +1,8 @@
 import React from 'react'
 
+const modal = document.createElement('div');
+
+
 class ProjectModal extends React.Component {
   constructor(props) {
     super(props)
@@ -17,7 +20,9 @@ class ProjectModal extends React.Component {
 
   renderModal(props) {
     if(props.isOpen === true) {
-      console.log('modal is open');
+      modal.classList.add('Modal-Open')
+      document.body.append(modal)
+      console.log('modal is open', props);
     }
   }
   render() {
