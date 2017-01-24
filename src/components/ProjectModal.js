@@ -20,9 +20,9 @@ class ProjectModal extends React.Component {
     return `
     <h1>${props.title}</h1>
     <p>${props.description}</p>
-    <p>${props.date}</p>
-    <p>${props.client}</p>
-    <p>${props.service}</p>
+    <p>Date: ${props.date}</p>
+    <p>Client: ${props.client}</p>
+    <p>Service: ${props.service}</p>
     `
   }
 
