@@ -1,13 +1,25 @@
 import React from 'react'
+import ProjectModal from './ProjectModal.js'
 
 class DeveloperProjectCard extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      showModal: false
+    }
+    this.handleOnClick = this.handleOnClick.bind(this)
+  }
+
+  handleOnClick() {
+    this.setState({showModal: true})
   }
   render() {
-    console.log(this.props.thumbnail);
     return (
-      <div className="Dev-Project-Card">
+      <div className="Dev-Project-Card"
+        onClick={this.handleOnClick}>
+        <ProjectModal
+          isOpen={this.state.showModal}
+          />
         <div className="hidden">
           <h1>{this.props.title}</h1>
         </div>

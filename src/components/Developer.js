@@ -28,9 +28,9 @@ class Developer extends React.Component {
       <div>
         <h1>Developer muhhfucker</h1>
         <div className="Dev-Project-Card-Container">
-          {projects.projects.map((project) => {
+          {projects.projects.map((project, index) => {
             return(
-              <DeveloperProjectCard {...project} />
+              <DeveloperProjectCard {...project} key={index}/>
             )
           })}
       </div>
