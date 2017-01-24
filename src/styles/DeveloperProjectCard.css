@@ -7,7 +7,7 @@
 .Dev-Project-Card {
   text-align: center;
   margin: 20px;
-  border: 1px black;
+  border: 1px solid #ecf0f1;
   height: 300px;
   width: 300px;
   align-items: center;
@@ -18,7 +18,7 @@
   height: inherit;
   position: absolute;
   padding: 0;
-  z-index: 1;
+  z-index: 2;
   opacity: 0;
   background-color: #ecf0f1;
 }
@@ -45,7 +45,15 @@
 }
 
 .Modal-Open {
-  min-height: 400px;
-  min-width: 300px;
+  top: -700px;
+  display: inline-block;
+  opacity: 0.8;
+  height: 500px;
+  width: 300px;
   background-color: #ecf0f1;
+  z-index: 1;
+  margin-left: 50px;
+  margin-right: 50px;
+  overflow: scroll;
+  position: relative;
 }

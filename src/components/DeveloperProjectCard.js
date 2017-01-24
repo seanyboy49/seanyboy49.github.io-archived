@@ -15,15 +15,19 @@ class DeveloperProjectCard extends React.Component {
   }
   render() {
     return (
+      <div>
+      <ProjectModal
+        isOpen={this.state.showModal}
+        props = {this.props}
+        />
       <div className="Dev-Project-Card"
         onClick={this.handleOnClick}>
-        <ProjectModal
-          isOpen={this.state.showModal}
-          />
+
         <div className="hidden">
           <h1>{this.props.title}</h1>
         </div>
         <img src={`src/public/developer-images/${this.props.thumbnail}`} className="Project-Card-Image"/>
+      </div>
       </div>
     )
   }
