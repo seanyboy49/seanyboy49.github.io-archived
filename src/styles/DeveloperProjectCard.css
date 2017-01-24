@@ -45,7 +45,7 @@
 }
 
 .Modal-Open {
-  height: 50px;
-  width: 50px;
+  min-height: 400px;
+  min-width: 300px;
   background-color: #ecf0f1;
 }

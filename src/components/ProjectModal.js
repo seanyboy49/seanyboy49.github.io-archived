@@ -11,11 +11,9 @@ class ProjectModal extends React.Component {
 
   componentDidMount() {
     console.log('component did mount', this.props);
-    this.renderModal(this.props)
   }
   componentDidUpdate() {
     console.log('component updated', this.props)
-    this.renderModal(this.props)
   }
 
   renderModal(props) {
@@ -26,7 +24,14 @@ class ProjectModal extends React.Component {
     }
   }
   render() {
-    return null
+    console.log('inside render', this.props);
+    return (
+      <div>
+        {
+          this.props.isOpen ? <h1>Hello</h1> : null
+        }
+      </div>
+    )
   }
 }
 
