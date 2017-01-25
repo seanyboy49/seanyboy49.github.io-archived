@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 .Dev-Project-Card-Container {
   display: flex;
   flex-wrap: wrap;
@@ -27,11 +31,11 @@
 
 
 .Project-Card-Image {
-  display: inline-block;
+  display: block;
   width: 300px;
   height: 300px;
   align-self: center;
-  position: relative;
+  top: 10px;
 }
 
 .Dev-Project-Card:hover {
@@ -55,7 +59,7 @@
   transform: translate(-50%, -50%);
   opacity: 0.9;
   background-color: #ecf0f1;
-  z-index: 1;
+  z-index: 5;
   overflow: scroll;
 }
 
@@ -63,6 +67,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 20px;
 }
 
 .Modal-Container ul {
@@ -74,4 +79,16 @@
 
 .Modal-Container li {
   margin: 5px;
+}
+
+.Overlay-Open {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #2c3e50;
+  opacity: 0.7;
+  z-index: 1;
 }

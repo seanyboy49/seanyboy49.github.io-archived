@@ -1,6 +1,14 @@
 import React from 'react'
 
+const overlay = document.createElement('div')
 const modal = document.createElement('div');
+
+overlay.addEventListener('click', closeModal)
+
+function closeModal(e) {
+  modal.classList.remove('Modal-Open')
+  overlay.classList.remove('Overlay-Open')
+}
 
 
 class ProjectModal extends React.Component {
@@ -33,7 +41,9 @@ class ProjectModal extends React.Component {
 
   renderModal() {
         modal.classList.add('Modal-Open')
+        overlay.classList.add('Overlay-Open')
         modal.innerHTML=this.createMarkup(this.props.props)
+        document.body.append(overlay)
         document.body.append(modal)
   }
   render() {
