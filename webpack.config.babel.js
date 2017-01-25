@@ -11,11 +11,13 @@ export default {
   module: {
     loaders: [
       { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel' },
+      { test: /\.json$/, loader: 'json-loader' },
+      { test: /\.css$/, loader: 'css-loader' }
     ],
   },
 
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['', '.js', '.jsx','.css', '.json'],
   },
 
   plugins: process.argv.indexOf('-p') === -1 ? null : [
