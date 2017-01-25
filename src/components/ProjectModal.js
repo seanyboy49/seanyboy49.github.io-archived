@@ -7,6 +7,7 @@ overlay.addEventListener('click', closeModal)
 
 function closeModal(e) {
   modal.classList.remove('Modal-Open')
+  modal.innerHTML=''
   overlay.classList.remove('Overlay-Open')
 }
 
