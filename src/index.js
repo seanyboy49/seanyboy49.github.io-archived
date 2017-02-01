@@ -14,11 +14,6 @@ import ExampleTwoDeepComponent from './components/ExampleTwoDeepComponent';
 const routes = (
   <Route path="/" mapMenuTitle="Home" component={Navigation}>
     <IndexRoute component={Developer} />
-
-    <Route path="example" mapMenuTitle="Example" component={ExampleComponent}>
-      <Route path="two-deep" mapMenuTitle="Two Deep" component={ExampleTwoDeepComponent} />
-    </Route>
-
     <Route path="*" mapMenuTitle="Page Not Found" component={PageNotFound} />
   </Route>
 );
