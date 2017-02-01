@@ -1,10 +1,12 @@
-const INITIAL_STATE = { profile: DEVELOPER, activeProject: null}
+import { PROFILE_SELECTED } from '../actions/index';
 
-export default function(state = INITIAL_STATE, action ) {
+const INITIAL_STATE = { profile: 'DEVELOPER' }
+
+
+export default function(state = INITIAL_STATE, action) {
   switch(action.type) {
-    case DEVELOPER_SELECTED:
-      return {state: action}
-    default:
-      return state;
+    case PROFILE_SELECTED:
+      return action.payload;
   }
+  return state;
 }

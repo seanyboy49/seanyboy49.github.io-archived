@@ -14,7 +14,7 @@ import Developer from './components/Developer'
 
 
 const routes = (
-  <Route path="/" mapMenuTitle="Home" component={Navigation}>
+  <Route path="/" component={Navigation}>
     <IndexRoute component={Developer} />
   </Route>
 );
