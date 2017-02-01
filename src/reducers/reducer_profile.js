@@ -1,9 +1,9 @@
 import { PROFILE_SELECTED } from '../actions/index';
 
-const INITIAL_STATE = { profile: 'DEVELOPER' }
 
 
-export default function(state = INITIAL_STATE, action) {
+export default function(state = 'DEVELOPER', action) {
+  console.log('INSIDE REDUCER PROFILE', action);
   switch(action.type) {
     case PROFILE_SELECTED:
       return action.payload;
