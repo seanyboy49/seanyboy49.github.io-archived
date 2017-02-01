@@ -3,6 +3,6 @@ export function selectProfile(profile) {
   // and an object with a type property
   return {
     type: SELECT_PROFILE,
-    payload: profile
+    payload: profilenp
   }
 }
