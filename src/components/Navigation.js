@@ -6,9 +6,6 @@ import { selectProfile } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
 class Navigation extends React.Component{
-  componentWillMount() {
-    console.log('state',this.props.profile);
-}
 
   condition() {
     if(this.props.profile==='Developer') {
@@ -20,7 +17,6 @@ class Navigation extends React.Component{
 
   handleClick(e) {
     this.props.selectProfile(e.target.innerHTML)
-    console.log('handle click', e.target.innerHTML);
   }
 
   render() {
