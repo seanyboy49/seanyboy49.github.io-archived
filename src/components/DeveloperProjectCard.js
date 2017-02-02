@@ -21,7 +21,7 @@ class DeveloperProjectCard extends React.Component {
         props = {this.props}
         />
       <div className="Dev-Project-Card"
-        onClick={this.handleOnClick}>
+        onClick={this.props.onCardSelect}>
 
         <div className="hidden">
           <h1>{this.props.title}</h1>

@@ -5,6 +5,16 @@ import DeveloperProjectCard from './DeveloperProjectCard'
 const data = require('../public/projects')
 
 class CardsContainer extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleOnClick=this.handleOnClick.bind(this)
+
+  }
+
+  handleOnClick(e) {
+    console.log('inside CardsContainer onClick method', e.target);
+  }
 
   condition() {
     if(this.props.profile==='Developer') {
@@ -14,7 +24,7 @@ class CardsContainer extends Component {
           <div className="Dev-Project-Card-Container">
             {data.projects.map((project, index) => {
               return(
-                <DeveloperProjectCard {...project} key={index}/>
+                <DeveloperProjectCard {...project} key={index} onCardSelect={this.handleOnClick}/>
               )
             })}
         </div>
