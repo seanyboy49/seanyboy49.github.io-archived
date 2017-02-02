@@ -7,13 +7,7 @@ import { bindActionCreators } from 'redux';
 
 class Navigation extends React.Component{
 
-  condition() {
-    if(this.props.profile==='Developer') {
-      console.log('Changed state to Developer');
-    } else {
-      console.log('State hasnt changed yet');
-    }
-  }
+
 
   handleClick(e) {
     this.props.selectProfile(e.target.innerHTML)
@@ -27,7 +21,6 @@ class Navigation extends React.Component{
             <a className="panel" onClick={() => this.props.selectProfile('Developer')}>Designer</a>
             <a className="panel" onClick={() => this.props.selectProfile('Developer')}>Filmmaker</a>
         </div>
-        {this.condition()}
         {this.props.children}
       </div>
     )
