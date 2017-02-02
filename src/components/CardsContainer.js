@@ -1,6 +1,8 @@
 import React, { Component} from 'react';
 import { connect } from 'react-redux';
 
+import DeveloperProjectCard from './DeveloperProjectCard'
+const data = require('../public/projects')
 
 class CardsContainer extends Component {
 
