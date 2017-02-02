@@ -8,7 +8,18 @@ class CardsContainer extends Component {
 
   condition() {
     if(this.props.profile==='Developer') {
-      console.log('Changed state to Developer');
+      return (
+        <div>
+          <h1>Developer muhhfucker</h1>
+          <div className="Dev-Project-Card-Container">
+            {data.projects.map((project, index) => {
+              return(
+                <DeveloperProjectCard {...project} key={index}/>
+              )
+            })}
+        </div>
+        </div>
+      )
     } else {
       console.log('State hasnt changed yet');
     }
@@ -19,8 +30,8 @@ class CardsContainer extends Component {
       <div>
         Cards Container
         {this.condition()}
-    </div>
-    )
+      </div>
+    );
   }
 }
 

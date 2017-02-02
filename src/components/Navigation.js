@@ -6,6 +6,11 @@ import { selectProfile } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
 class Navigation extends React.Component{
+  constructor(props) {
+    super(props);
+
+    this.handleClick = this.handleClick.bind(this)
+  }
 
 
 
@@ -17,9 +22,9 @@ class Navigation extends React.Component{
     return(
       <div >
         <div className="nav-bar" style={{"backgroundColor": "#3498db"}}>
-            <a className="panel" onClick={this.handleClick.bind(this)}>Developer</a>
-            <a className="panel" onClick={() => this.props.selectProfile('Developer')}>Designer</a>
-            <a className="panel" onClick={() => this.props.selectProfile('Developer')}>Filmmaker</a>
+            <a className="panel" onClick={this.handleClick}>Developer</a>
+            <a className="panel" onClick={this.handleClick}>Designer</a>
+            <a className="panel" onClick={this.handleClick}>Filmmaker</a>
         </div>
         {this.props.children}
       </div>
