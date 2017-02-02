@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
+
 import Navigation from './Navigation';
 import CardsContainer from './CardsContainer';
 import Modal from './Modal'
 
-export default class App extends Component {
+class App extends Component {
 
   ModalCondition() {
     if(this.props.activeCard===null) {
-      return
+      return (
+        <div>No activeCard ya knob</div>
+      )
     } else {
       <Modal />
     }
@@ -23,3 +28,9 @@ export default class App extends Component {
     )
   }
 }
+
+function mapStateToProps(state) {
+  return { activeCard: state.activeCard }
+}
+
+export default connect(mapStateToProps, null)(App);
