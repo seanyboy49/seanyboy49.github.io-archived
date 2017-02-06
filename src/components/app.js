@@ -21,7 +21,7 @@ class App extends Component {
   SliderCondition() {
     if(this.props.profile==='Developer') {
       return (
-        <img src="src/public/slider-images/Developer-01.svg"/>
+        <img src="src/public/slider-images/Developer-01.svg" className="slider"/>
       )
     }
     console.log('slider', this.props.profile);
@@ -31,7 +31,7 @@ class App extends Component {
     return (
       <div>
         <Navigation />
-        {this.SliderCondition()}
+        // {this.SliderCondition()} 
         <CardsContainer />
         {this.ModalCondition()}
       </div>
