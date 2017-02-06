@@ -13,6 +13,7 @@ class DeveloperProjectCard extends React.Component {
   handleOnClick() {
     this.setState({showModal: true})
   }
+
   render() {
     return (
       <div>
@@ -21,7 +22,7 @@ class DeveloperProjectCard extends React.Component {
         props = {this.props}
         />
       <div className="Dev-Project-Card"
-        onClick={this.props.onCardSelect}>
+        onClick={this.handleOnClick}>
 
         <div className="hidden">
           <h1>{this.props.title}</h1>
