@@ -31,7 +31,7 @@ class App extends Component {
     return (
       <div>
         <Navigation />
-        // {this.SliderCondition()} 
+        {this.SliderCondition()}
         <CardsContainer />
         {this.ModalCondition()}
       </div>
