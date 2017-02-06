@@ -15,9 +15,12 @@ a:hover {
 }
 
 .nav-bar{
-  height: 100px;
-  background-size: cover;
+  top: 0;
+  height: 70px;
+  width: 100%;
   display: flex;
+  background-color: #ecf0f1;
+  opacity: 0.7;
 }
 
 .panel {

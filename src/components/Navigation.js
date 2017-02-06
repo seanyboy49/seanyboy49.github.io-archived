@@ -21,7 +21,7 @@ class Navigation extends React.Component{
   render() {
     return(
       <div >
-        <div className="nav-bar" style={{"backgroundColor": "#3498db"}}>
+        <div className="nav-bar">
             <a className="panel" onClick={this.handleClick}>Developer</a>
             <a className="panel" onClick={this.handleClick}>Designer</a>
             <a className="panel" onClick={this.handleClick}>Filmmaker</a>

@@ -39,13 +39,13 @@ html, body {
 }
 
 .Dev-Project-Card:hover {
-  transform: scale(1.1);
-  transition: all 0.4s;
+  transform: scale(1.05);
+  transition: all 0.3s;
 }
 
 .Dev-Project-Card:hover .hidden{
-  transform: scale(1.1);
-  transition: all 0.4s;
+  transform: scale(1.05);
+  transition: all 0.3s;
   opacity: 0.5;
 }
 
