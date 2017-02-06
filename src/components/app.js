@@ -18,10 +18,20 @@ class App extends Component {
     }
   }
 
+  SliderCondition() {
+    if(this.props.profile==='Developer') {
+      return (
+        <img src="src/public/slider-images/Developer-01.svg"/>
+      )
+    }
+    console.log('slider', this.props.profile);
+  }
+
   render() {
     return (
       <div>
         <Navigation />
+        {this.SliderCondition()}
         <CardsContainer />
         {this.ModalCondition()}
       </div>
@@ -30,7 +40,7 @@ class App extends Component {
 }
 
 function mapStateToProps(state) {
-  return { activeCard: state.activeCard }
+  return { activeCard: state.activeCard, profile: state.profile }
 }
 
 export default connect(mapStateToProps, null)(App);
