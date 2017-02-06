@@ -24,7 +24,11 @@ class App extends Component {
         <img src="src/public/slider-images/Developer-01-01.svg" className="slider"/>
       )
     }
-    console.log('slider', this.props.profile);
+    else if (this.props.profile==='Filmmaker') {
+      return (
+        <img src="src/public/slider-images/Filmmaker-01.svg" className="slider"/>
+      )
+  }
   }
 
   render() {
