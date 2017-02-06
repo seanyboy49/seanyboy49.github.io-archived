@@ -65,17 +65,19 @@ html, body {
 }
 
 .Modal-Container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
   padding: 20px;
 }
 
 .Modal-Container ul {
   list-style: none;
-  display: flex;
+  /*display: flex;*/
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.Modal-Container .Project-Card-Image {
+  margin: auto;
 }
 
 .Modal-Container li {
