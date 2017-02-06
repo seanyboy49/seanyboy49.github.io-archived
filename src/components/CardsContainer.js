@@ -20,7 +20,6 @@ class CardsContainer extends Component {
     if(this.props.profile==='Developer') {
       return (
         <div>
-          <h1>Developer muhhfucker</h1>
           <div className="Dev-Project-Card-Container">
             {data.projects.map((project, index) => {
               return(
@@ -38,7 +37,6 @@ class CardsContainer extends Component {
   render() {
     return (
       <div>
-        Cards Container
         {this.condition()}
       </div>
     );
