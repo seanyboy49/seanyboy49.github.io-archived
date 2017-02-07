@@ -12,6 +12,7 @@ a {
 a:hover {
   font-size: 22px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .nav-bar{
