@@ -39,13 +39,13 @@ html, body {
 }
 
 .Dev-Project-Card:hover {
-  transform: scale(1.1);
-  transition: all 0.4s;
+  transform: scale(1.05);
+  transition: all 0.3s;
 }
 
 .Dev-Project-Card:hover .hidden{
-  transform: scale(1.1);
-  transition: all 0.4s;
+  transform: scale(1.05);
+  transition: all 0.3s;
   opacity: 0.5;
 }
 
@@ -57,24 +57,29 @@ html, body {
     top: 50%;
     left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.9;
-  background-color: #ecf0f1;
+
+  background-color: #FFFFFF;
   z-index: 5;
   overflow: scroll;
+  transition: 0.5s;
 }
 
 .Modal-Container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
   padding: 20px;
 }
 
 .Modal-Container ul {
+  padding-left: 0;
+  justify-content: center;
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.Modal-Container .Project-Card-Image {
+  margin: auto;
 }
 
 .Modal-Container li {

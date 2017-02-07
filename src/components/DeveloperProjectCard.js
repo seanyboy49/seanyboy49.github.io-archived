@@ -13,6 +13,7 @@ class DeveloperProjectCard extends React.Component {
   handleOnClick() {
     this.setState({showModal: true})
   }
+
   render() {
     return (
       <div>
