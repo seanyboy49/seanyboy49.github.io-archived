@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollEvent from 'react-onscroll';
 import { connect } from 'react-redux';
 
 
@@ -7,6 +8,15 @@ import CardsContainer from './CardsContainer';
 import Modal from './Modal'
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleScrollCallback=this.handleScrollCallback.bind(this)
+  }
+
+  handleScrollCallback(e) {
+    console.log('scrolling', e);
+  }
 
   ModalCondition() {
     if(this.props.activeCard===null) {
@@ -40,6 +50,7 @@ class App extends Component {
     return (
       <div>
         <Navigation />
+          <ScrollEvent handleScrollCallback={this.handleScrollCallback} />
         {this.SliderCondition()}
         <CardsContainer />
         {this.ModalCondition()}
