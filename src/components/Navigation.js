@@ -25,10 +25,10 @@ class Navigation extends React.Component{
     return(
       <div >
         <div className="nav-bar" onScroll={this.handleScroll}>
-            <a className="panel" onClick={this.handleClick}>Developer</a>
-            <a className="panel" onClick={this.handleClick}>Designer</a>
-            <a className="panel" onClick={this.handleClick}>Filmmaker</a>
-            <a className="panel" onClick={this.handleClick}>About</a>
+            <span className="panel"> <Link to="/developer">Developer</Link></span>
+            <span className="panel"> <Link to="/designer">Designer</Link></span>
+            <span className="panel"> <Link to="/filmmaker">Filmmaker</Link></span>
+            <span className="panel"> <Link to="/about">About</Link></span>
 
         </div>
         {this.props.children}

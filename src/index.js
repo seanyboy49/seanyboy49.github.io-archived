@@ -16,6 +16,7 @@ import Developer from './components/Developer'
 const routes = (
   <Route path="/" component={Navigation}>
     <IndexRoute component={Developer} />
+    <Route path="/developer" component={Developer}/>
   </Route>
 )
 
