@@ -2,7 +2,7 @@ import React from 'react';
 
 import DeveloperProjectCard from './DeveloperProjectCard';
 
-const data = require('../public/projects')
+const data = require('../public/developer')
 
 
 
