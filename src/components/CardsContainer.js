@@ -1,7 +1,9 @@
 import React, { Component} from 'react';
 import { connect } from 'react-redux';
 
-import DeveloperProjectCard from './DeveloperProjectCard'
+import DeveloperProjectCard from './DeveloperProjectCard';
+import About from './About';
+
 const data = require('../public/projects')
 
 class CardsContainer extends Component {
@@ -28,6 +30,10 @@ class CardsContainer extends Component {
             })}
         </div>
         </div>
+      )
+    } else if (this.props.profile==='About') {
+      return (
+        <About />
       )
     } else {
       console.log('State hasnt changed yet');
