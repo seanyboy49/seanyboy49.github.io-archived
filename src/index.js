@@ -11,10 +11,11 @@ import promise from 'redux-promise'
 
 import App from './components/app'
 import Navigation from './components/Navigation'
+import Developer from './components/Developer'
 
 const routes = (
   <Route path="/" component={Navigation}>
-
+    <IndexRoute component={Developer} />
   </Route>
 )
 
