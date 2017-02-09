@@ -9,14 +9,14 @@ import reducers from './reducers';
 import promise from 'redux-promise'
 
 
-import App from './components/app'
+import Construction from './components/construction'
 
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
 render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
+    <Construction />
   </Provider>
   , document.getElementById('root'),
 );
