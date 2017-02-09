@@ -10,13 +10,22 @@ import promise from 'redux-promise'
 
 
 import App from './components/app'
+import Navigation from './components/Navigation'
 
+const routes = (
+  <Route path="/" component={Navigation}>
+
+  </Route>
+)
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
 render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
+    <Router
+      history={browserHistory}
+      routes={routes}
+       />
   </Provider>
   , document.getElementById('root'),
 );
