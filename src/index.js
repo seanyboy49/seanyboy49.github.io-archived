@@ -12,11 +12,20 @@ import promise from 'redux-promise'
 import App from './components/app'
 import Navigation from './components/Navigation'
 import Developer from './components/Developer'
+import Designer from './components/Designer'
+import Filmmaker from './components/Filmmaker'
+import About from './components/About'
+
 
 const routes = (
   <Route path="/" component={Navigation}>
     <IndexRoute component={Developer} />
     <Route path="/developer" component={Developer}/>
+    <Route path="/designer" component={Designer} />
+    <Route path="/filmmaker" component={Filmmaker} />
+    <Route path="/about" component={About} />
+
+
   </Route>
 )
 

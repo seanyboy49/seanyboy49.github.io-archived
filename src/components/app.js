@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 
 import Navigation from './Navigation';
 import CardsContainer from './CardsContainer';
-import Modal from './Modal'
 
 class App extends Component {
   constructor(props) {
