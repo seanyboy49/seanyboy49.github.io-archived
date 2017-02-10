@@ -31,7 +31,7 @@ class ProjectCard extends React.Component {
         <div className="hidden">
           <h1>{this.props.title}</h1>
         </div>
-        <img src={`src/public/${this.props.profile}-images/${this.props.thumbnail}`} className="Project-Card-Image"/>
+        <img src={`src/public/${this.props.profile}-thumbnails/${this.props.thumbnail}`} className="Project-Card-Image"/>
       </div>
       </div>
     )

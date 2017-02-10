@@ -22,23 +22,30 @@ class ProjectModal extends React.Component {
 
   createMarkup(props) {
     if(this.props.profile==='developer') {
-    return `
-    <div class="Modal-Container">
-      <h1>${props.title}</h1>
-      <img src=src/public/developer-images/${props.thumbnail} class="Project-Card-Image"/>
-      <p>${props.description}</p>
-      <ul>
-        <li><b>Date:</b> ${props.date}</li>
-        <li><b>Client:</b> ${props.client}</li>
-        <li><b>Service:</b> ${props.service}</li>
-      </ul>
-    </div>
-    `}
-    else if (this.props.profile==='designer') {
+      let html= (`
+      <div class="Modal-Container">
+        <h1>${props.title}</h1>
+        <img src=src/public/developer-fullsize/${props.fullsize} class="Project-Card-Image"/>
+        <p>${props.description}</p>
+        <ul>
+          <li><b>Date:</b> ${props.date}</li>
+          <li><b>Client:</b> ${props.client}</li>
+          <li><b>Service:</b> ${props.service}</li>
+        </ul>
+      </div>
+      `);
+      props.media ? html += (
+        `<video width="350" height="734" controls autoplay>
+          <source src="src/public/developer-fullsize/${props.title}.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+        </video>`
+      ) : html
+    return html;
+  } else if (this.props.profile==='designer') {
       return `
       <div class="Modal-Container">
         <h1>${props.title}</h1>
-        <img src=src/public/designer-images/${props.thumbnail} class="Project-Card-Image"/>
+        <img src=src/public/designer-thumbnails/${props.thumbnail} class="Project-Card-Image"/>
         <p>${props.description}</p>
         <ul>
           <li><b>Date:</b> ${props.date}</li>

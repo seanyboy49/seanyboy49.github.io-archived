@@ -7,7 +7,8 @@
       "service": "IoT",
       "client": "Dev Bootcamp",
       "github": "https://github.com/seanyboy49/RFLCTT",
-      "thumbnail": "RFLCT.png"
+      "thumbnail": "RFLCT.png",
+      "fullsize": "RFLCT.jpg"
     },
     {
       "title": "Eliza",
@@ -16,7 +17,9 @@
       "service": "Chatbot",
       "client": "Hack Against Violence",
       "github": "https://github.com/seanyboy49/empathy",
-      "thumbnail": "Eliza.png"
+      "thumbnail": "Eliza.png",
+      "fullsize": "Eliza.png",
+      "media": "Eliza.mp4"
     },
     {
       "title": "Accomplishe",
@@ -25,11 +28,12 @@
       "service": "Web App",
       "client": "Lady Problems San Francisco Hackathon",
       "github": "https://github.com/elliedori/accomplishe/tree/master",
-      "thumbnail": "Accomplishe.png"
+      "thumbnail": "Accomplishe.png",
+      "fullsize": "Eliza.png"
     },
     {
       "title": "Github Battle Arena",
-      "description": "A Scanner Smartly is a React on Rails web and mobile app that uses Amazon and Ebay API's to automatically update Footprint's inventory and online vendor accounts whenever new products go in or out of the store.",
+      "description": "It's a web app built with React that fetches public data from two players' Github accounts, compares their key statistics, and returns a winner!",
       "date": "November 2016",
       "service": "Web App",
       "client": "Passion",
@@ -38,7 +42,7 @@
     },
     {
       "title": "Viddy",
-      "description": "A Scanner Smartly is a React on Rails web and mobile app that uses Amazon and Ebay API's to automatically update Footprint's inventory and online vendor accounts whenever new products go in or out of the store.",
+      "description": "A movie poster and trailer site built in React with Redux for state management.",
       "date": "November 2016",
       "service": "Web App",
       "client": "Passion",
@@ -47,7 +51,7 @@
     },
     {
       "title": "Caprese",
-      "description": "A Scanner Smartly is a React on Rails web and mobile app that uses Amazon and Ebay API's to automatically update Footprint's inventory and online vendor accounts whenever new products go in or out of the store.",
+      "description": "A pomodoro timer built in React with a Rails backend for time and productivity management.",
       "date": "December 2016",
       "service": "Web App",
       "client": "Passion",
@@ -56,7 +60,7 @@
     },
     {
       "title": "Kelvn",
-      "description": "A fun web app for sending annoying text messages to your friends and enemies.",
+      "description": "A fun web app built in Sinatra for sending annoying text messages to your friends and enemies.",
       "date": "September 2016",
       "service": "Web App",
       "client": "Passion",
