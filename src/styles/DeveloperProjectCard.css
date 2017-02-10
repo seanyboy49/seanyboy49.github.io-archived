@@ -99,6 +99,10 @@ html, body {
   z-index: 1;
 }
 
+.fullsize-image {
+  width: 80%;
+}
+
 video {
   margin: auto;
   padding: 20px;
