@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectModal from './ProjectModal.js'
 
-class DeveloperProjectCard extends React.Component {
+class ProjectCard extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -35,4 +35,4 @@ class DeveloperProjectCard extends React.Component {
 }
 
 
-export default DeveloperProjectCard
+export default ProjectCard

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DeveloperProjectCard from './DeveloperProjectCard';
+import ProjectCard from './ProjectCard';
 
 const data = require('../public/developer')
 
@@ -14,7 +14,7 @@ class Developer extends React.Component{
         <div className="Dev-Project-Card-Container">
           {data.projects.map((project, index) => {
             return(
-              <DeveloperProjectCard {...project} key={index} onCardSelect={this.handleOnClick}/>
+              <ProjectCard {...project} key={index} />
             )
           })}
         </div>

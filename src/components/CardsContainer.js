@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 import { connect } from 'react-redux';
 
-import DeveloperProjectCard from './DeveloperProjectCard';
+import ProjectCard from './ProjectCard';
 import About from './About';
 
 
@@ -24,7 +24,7 @@ class CardsContainer extends Component {
           <div className="Dev-Project-Card-Container">
             {data.projects.map((project, index) => {
               return(
-                <DeveloperProjectCard {...project} key={index} onCardSelect={this.handleOnClick}/>
+                <ProjectCard {...project} key={index} onCardSelect={this.handleOnClick}/>
               )
             })}
         </div>
