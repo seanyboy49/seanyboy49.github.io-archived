@@ -19,13 +19,8 @@ class ProjectModal extends React.Component {
     this.createMarkup = this.createMarkup.bind(this);
   }
 
-  componentDidMount() {
-    console.log('component did mount', this.props);
-  }
-  componentDidUpdate() {
-    console.log('component updated', this.props)
-  }
   createMarkup(props) {
+    if(this.props.profile==='developer') {
     return `
     <div class="Modal-Container">
       <h1>${props.title}</h1>
@@ -37,7 +32,21 @@ class ProjectModal extends React.Component {
         <li><b>Service:</b> ${props.service}</li>
       </ul>
     </div>
-    `
+    `}
+    else if (this.props.profile==='designer') {
+      return `
+      <div class="Modal-Container">
+        <h1>${props.title}</h1>
+        <img src=src/public/designer-images/${props.thumbnail} class="Project-Card-Image"/>
+        <p>${props.description}</p>
+        <ul>
+          <li><b>Date:</b> ${props.date}</li>
+          <li><b>Product:</b> ${props.product}</li>
+          <li><b>Service:</b> ${props.service}</li>
+        </ul>
+      </div>
+      `
+    }
   }
 
   renderModal() {
@@ -48,7 +57,6 @@ class ProjectModal extends React.Component {
         document.body.append(modal)
   }
   render() {
-    console.log('inside render', this.props);
     return (
       <div>
         {

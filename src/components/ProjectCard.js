@@ -20,6 +20,7 @@ class ProjectCard extends React.Component {
       <ProjectModal
         isOpen={this.state.showModal}
         props = {this.props}
+        profile={this.props.profile}
         />
       <div className="Dev-Project-Card"
         onClick={this.handleOnClick}>

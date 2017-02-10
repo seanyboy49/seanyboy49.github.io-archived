@@ -19,12 +19,11 @@ class Developer extends React.Component{
                 key={index}
                 profile="developer"
                 />
-            )
+            );
           })}
         </div>
-    </div>
-
-    )
+      </div>
+  );
   }
 }
 
