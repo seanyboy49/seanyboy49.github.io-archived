@@ -6,7 +6,9 @@
       "date": "January 2017",
       "product": "T-Shirt/Sticker Design",
       "service": "Design",
-      "thumbnail": "SanFranciscoBadge.png"
+      "thumbnail": "SanFranciscoBadge.png",
+      "fullsize": ["SanFranciscoBadge1.png", "SanFranciscoBadge2.png"]
+
     },
     {
       "title": "BeerMe!",

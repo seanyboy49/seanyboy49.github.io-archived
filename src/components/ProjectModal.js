@@ -12,6 +12,14 @@ function closeModal(e) {
   overlay.classList.remove('Overlay-Open')
 }
 
+function multipleImages(props) {
+  props.fullsize.map((image) => {
+    (`
+      <img src=src/public/developer-fullsize/${image} class="fullsize-image"/>
+      `)
+  })
+}
+
 
 class ProjectModal extends React.Component {
   constructor(props) {
@@ -32,17 +40,17 @@ class ProjectModal extends React.Component {
           <li><b>Client:</b> ${props.client}</li>
           <li><b>Service:</b> ${props.service}</li>
           <li><b>Github:</b> <a href="${props.github}"> ${props.github}</a></li>
-
         </ul>
       </div>
       `);
 
     return html;
   } else if (this.props.profile==='designer') {
-      return `
+
+      let html=(`
       <div class="Modal-Container">
-        <h1>${props.title}</h1>
-        <img src=src/public/designer-thumbnails/${props.thumbnail} class="Project-Card-Image"/>
+        <h1 id="developer-title">${props.title}</h1>
+
         <p>${props.description}</p>
         <ul>
           <li><b>Date:</b> ${props.date}</li>
@@ -50,9 +58,19 @@ class ProjectModal extends React.Component {
           <li><b>Service:</b> ${props.service}</li>
         </ul>
       </div>
-      `
+      `);
+
+      // let title = document.querySelector('#developer-title')
+      // var div = document.createElement("div");
+      // div.innerHTML = multipleImages(props);
+      // div.appendChild(element)
+      // html.appendChild(div);
+       return multipleImages(props);
+      // return html;
     }
   }
+
+
 
   renderModal() {
         modal.classList.add('Modal-Open')
