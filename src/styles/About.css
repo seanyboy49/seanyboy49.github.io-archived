@@ -1,0 +1,33 @@
+.about-container {
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  background-color: #ecf0f1;
+}
+
+.header-content {
+  text-align: center;
+  font-size: 50px;
+}
+
+.subhead {
+  text-align: center;
+  opacity: 0.9;
+  color: #95a5a6;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.skills {
+  display: inline-block;
+  width: 50%;
+}
+
+.key-stats {
+  display: inline-block;
+  /*float: right;*/
+}
