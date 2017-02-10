@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectModal from './ProjectModal.js'
+import DeveloperModal from './DeveloperModal'
 
 class ProjectCard extends React.Component {
   constructor(props) {
@@ -9,6 +10,8 @@ class ProjectCard extends React.Component {
     }
     this.handleOnClick = this.handleOnClick.bind(this)
   }
+
+
 
   handleOnClick() {
     this.setState({showModal: true})
