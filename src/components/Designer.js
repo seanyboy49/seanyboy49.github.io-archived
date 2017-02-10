@@ -12,7 +12,11 @@ class Designer extends React.Component{
         <div className="Dev-Project-Card-Container">
           {data.projects.map((project, index) => {
             return(
-              <ProjectCard {...project} key={index} />
+              <ProjectCard
+                {...project}
+                key={index}
+                profile="designer"
+                 />
             )
           })}
         </div>
