@@ -6,6 +6,7 @@ class About extends React.Component{
       <div className="about-container">
         <h1 className="header-content">Sean Lee</h1>
         <h2 className="subhead">A programmer, a designer and a filmmaker walk into a bar...</h2>
+        
         <section className="about-content">
           <p>It sounds like the beginning of a terrible joke, but it's actually my resume.</p>
           <p>A creative at heart with a passion for design and technology, I'm drawn towards projects that use bold, beautiful design choices to improve human/computer interaction.</p>

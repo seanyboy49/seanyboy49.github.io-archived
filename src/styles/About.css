@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
 .about-container {
   margin: auto;
   width: 90%;
@@ -16,15 +19,21 @@
   color: #95a5a6;
   font-size: 30px;
   font-weight: lighter;
+  font-family: 'Roboto';
 }
 
 .about-content {
   text-align: center;
+  font-family: 'Roboto';
 }
 
 .skills {
   display: inline-block;
   width: 50%;
+}
+
+.skills p {
+  font-family: 'Roboto';
 }
 
 .key-stats {
