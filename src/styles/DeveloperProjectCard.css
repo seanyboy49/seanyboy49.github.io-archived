@@ -28,6 +28,10 @@ html, body {
   background-color: #ecf0f1;
 }
 
+.hidden h1{
+  margin-top: 40%;
+  opacity: 1;
+}
 
 
 .Project-Card-Image {
@@ -49,6 +53,13 @@ html, body {
   transition: all 0.3s;
   opacity: 0.5;
 }
+
+.hidden:hover h1{
+  margin-top: 40%;
+  opacity: 1;
+}
+
+
 
 /*Modal Styling*/
 
