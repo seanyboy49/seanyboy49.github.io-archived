@@ -4,6 +4,7 @@ import React from 'react'
 const overlay = document.createElement('div')
 const modal = document.createElement('div');
 
+
 overlay.addEventListener('click', closeModal)
 
 function closeModal(e) {

@@ -48,3 +48,34 @@
   display:inline;
   height: 40px;
 }
+
+.toolTip-open {
+  padding: 5px;
+  text-align: center;
+  z-index: 100;
+  position: absolute;
+  border-radius: 4px;
+  height: 20px;
+  min-width: 50px;
+  background-color: #7f8c8d;
+}
+
+.toolTip-open:after {
+  z-index: 0;
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 12px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #7f8c8d;
+}
+
+.toolTip-open p {
+  padding: 0;
+  margin: 0;
+  bottom: -10px;
+  color: white;
+}
