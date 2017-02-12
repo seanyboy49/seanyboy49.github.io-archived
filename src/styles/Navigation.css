@@ -21,6 +21,7 @@ a {
 }
 
 #nav-bar{
+  top: -5;
   margin: 0;
   position: relative;
   top: 0;

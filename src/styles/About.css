@@ -45,6 +45,10 @@
 
 /*Icon Styling*/
 
+ul {
+  list-style: none;
+}
+
 .icon {
   margin-bottom: -14px;
   display:inline;
