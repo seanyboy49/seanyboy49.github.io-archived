@@ -1,7 +1,9 @@
 import React from 'react'
 
+
 const overlay = document.createElement('div')
 const modal = document.createElement('div');
+
 
 overlay.addEventListener('click', closeModal)
 
@@ -9,6 +11,14 @@ function closeModal(e) {
   modal.classList.remove('Modal-Open')
   modal.innerHTML=''
   overlay.classList.remove('Overlay-Open')
+}
+
+function multipleImages(props) {
+  props.fullsize.map((image) => {
+    (`
+      <img src=src/public/developer-fullsize/${image} class="fullsize-image"/>
+      `)
+  })
 }
 
 
@@ -19,26 +29,43 @@ class ProjectModal extends React.Component {
     this.createMarkup = this.createMarkup.bind(this);
   }
 
-  componentDidMount() {
-    console.log('component did mount', this.props);
-  }
-  componentDidUpdate() {
-    console.log('component updated', this.props)
-  }
   createMarkup(props) {
-    return `
-    <div class="Modal-Container">
-      <h1>${props.title}</h1>
-      <img src=src/public/developer-images/${props.thumbnail} class="Project-Card-Image"/>
-      <p>${props.description}</p>
-      <ul>
-        <li><b>Date:</b> ${props.date}</li>
-        <li><b>Client:</b> ${props.client}</li>
-        <li><b>Service:</b> ${props.service}</li>
-      </ul>
-    </div>
-    `
+    if(this.props.profile==='developer') {
+      let html= (`
+      <div class="Modal-Container">
+        <h1>${props.title}</h1>
+        <img src=src/public/developer-fullsize/${props.fullsize} class="fullsize-image"/>
+        <p>${props.description}</p>
+        <ul>
+          <li><b>Date:</b> ${props.date}</li>
+          <li><b>Client:</b> ${props.client}</li>
+          <li><b>Service:</b> ${props.service}</li>
+          <li><b>Github:</b> <a href="${props.github}"> ${props.github}</a></li>
+        </ul>
+      </div>
+      `);
+
+    return html;
+  } else if (this.props.profile==='designer') {
+
+      let html=(`
+      <div class="Modal-Container">
+        <h1 id="developer-title">${props.title}</h1>
+        <img src=src/public/designer-fullsize/${props.fullsize} class="fullsize-image"/>
+        <p>${props.description}</p>
+        <ul>
+          <li><b>Date:</b> ${props.date}</li>
+          <li><b>Product:</b> ${props.product}</li>
+          <li><b>Service:</b> ${props.service}</li>
+        </ul>
+      </div>
+      `);
+      return html;
+    }
+
   }
+
+
 
   renderModal() {
         modal.classList.add('Modal-Open')
@@ -48,7 +75,6 @@ class ProjectModal extends React.Component {
         document.body.append(modal)
   }
   render() {
-    console.log('inside render', this.props);
     return (
       <div>
         {

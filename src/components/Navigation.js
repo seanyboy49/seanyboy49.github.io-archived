@@ -1,21 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router'
+import ScrollEvent from 'react-onscroll';
+
 
 import { connect } from 'react-redux';
 import { selectProfile } from '../actions/index';
 import { bindActionCreators } from 'redux';
+
+
 
 class Navigation extends React.Component{
   constructor(props) {
     super(props);
 
     this.handleClick = this.handleClick.bind(this)
-    this.handleScroll=this.handleScroll.bind(this)
+    this.handleScrollCallback=this.handleScrollCallback.bind(this)
+
   }
 
-  handleScroll(e) {
-    console.log('scrolling', e);
+
+  handleScrollCallback() {
+    const NavBar = this.refs.NavBar;
+    const topOfNav = NavBar.offsetTop;
+    console.log('window.scrollyY', window.scrollY);
+    console.log('topOfNav', topOfNav);
+    if (window.scrollY > topOfNav) {
+      document.body.style.paddingTop=NavBar.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav')
+    } else {
+      document.body.classList.remove('fixed-nav')
+      document.body.style.paddingTop = 0
+    }
   }
+
 
   handleClick(e) {
     this.props.selectProfile(e.target.innerHTML)
@@ -23,19 +40,26 @@ class Navigation extends React.Component{
 
   render() {
     return(
-      <div >
-        <div className="nav-bar" onScroll={this.handleScroll}>
-            <a className="panel" onClick={this.handleClick}>Developer</a>
-            <a className="panel" onClick={this.handleClick}>Designer</a>
-            <a className="panel" onClick={this.handleClick}>Filmmaker</a>
-            <a className="panel" onClick={this.handleClick}>About</a>
 
-        </div>
+      <div >
+        <ScrollEvent handleScrollCallback={this.handleScrollCallback} />
+        <nav id="nav-bar" ref="NavBar" >
+        <ul>
+            <li className="logo"><a href="#">SEAN</a></li>
+            <li> <Link to="/developer">Developer</Link></li>
+            <li> <Link to="/designer">Designer</Link></li>
+            <li> <Link to="/filmmaker">Filmmaker</Link></li>
+            <li> <Link to="/about">About</Link></li>
+        </ul>
+        </nav>
         {this.props.children}
       </div>
     )
   }
 }
+
+
+
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ selectProfile: selectProfile }, dispatch)
