@@ -3,6 +3,7 @@
 
 .about-container {
   margin: auto;
+  padding: 20px;
   width: 90%;
   height: 90%;
   background-color: #ecf0f1;
@@ -23,7 +24,9 @@
 }
 
 .about-content {
-  text-align: center;
+  margin: auto;
+  width: 50%;
+  display: inline-block;
   font-family: 'Roboto';
 }
 
@@ -38,7 +41,6 @@
 
 .key-stats {
   display: inline-block;
-  /*float: right;*/
 }
 
 /*Icon Styling*/
