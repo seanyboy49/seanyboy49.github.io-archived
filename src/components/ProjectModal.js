@@ -60,14 +60,16 @@ class ProjectModal extends React.Component {
       </div>
       `);
 
-      // let title = document.querySelector('#developer-title')
+      // var title = document.getElementById('developer-title')
+      // console.log(title);
       // var div = document.createElement("div");
       // div.innerHTML = multipleImages(props);
       // div.appendChild(element)
       // html.appendChild(div);
-       return multipleImages(props);
-      // return html;
+      //  return multipleImages(props);
+      return html;
     }
+
   }
 
 
