@@ -1,21 +1,36 @@
 import React from 'react';
 import { Link } from 'react-router'
+import ScrollEvent from 'react-onscroll';
+
 
 import { connect } from 'react-redux';
 import { selectProfile } from '../actions/index';
 import { bindActionCreators } from 'redux';
+
+
 
 class Navigation extends React.Component{
   constructor(props) {
     super(props);
 
     this.handleClick = this.handleClick.bind(this)
-    this.handleScroll=this.handleScroll.bind(this)
+    this.handleScrollCallback=this.handleScrollCallback.bind(this)
+
   }
 
-  handleScroll(e) {
-    console.log('scrolling', e);
+  componentDidMount() {
+    const NavBar = this.refs.NavBar;
+    const topOfNav = NavBar.offSetTop;
+
+    console.log(window.scrollY);
   }
+
+  handleScrollCallback(e) {
+    const NavBar = this.refs.NavBar;
+    const topOfNav = NavBar.offSetTop;
+
+    console.log(window.scrollY);  }
+
 
   handleClick(e) {
     this.props.selectProfile(e.target.innerHTML)
@@ -23,19 +38,26 @@ class Navigation extends React.Component{
 
   render() {
     return(
-      <div >
-        <div className="nav-bar" onScroll={this.handleScroll}>
-            <span className="panel"> <Link to="/developer">Developer</Link></span>
-            <span className="panel"> <Link to="/designer">Designer</Link></span>
-            <span className="panel"> <Link to="/filmmaker">Filmmaker</Link></span>
-            <span className="panel"> <Link to="/about">About</Link></span>
 
-        </div>
+      <div >
+        <ScrollEvent handleScrollCallback={this.handleScrollCallback} />
+
+        <ul id="nav-bar" ref="NavBar" >
+            <li className="panel logo"><a href="#">SEAN</a></li>
+            <li className="panel"> <Link to="/developer">Developer</Link></li>
+            <li className="panel"> <Link to="/designer">Designer</Link></li>
+            <li className="panel"> <Link to="/filmmaker">Filmmaker</Link></li>
+            <li className="panel"> <Link to="/about">About</Link></li>
+
+        </ul>
         {this.props.children}
       </div>
     )
   }
 }
+
+
+
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ selectProfile: selectProfile }, dispatch)

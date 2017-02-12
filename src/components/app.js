@@ -13,19 +13,15 @@ class App extends Component {
     this.handleScrollCallback=this.handleScrollCallback.bind(this)
   }
 
+  componentDidMount() {
+    const span = this.refs.NavBar;
+    console.log(span,'span');
+  }
+
   handleScrollCallback(e) {
     console.log('scrolling', e);
   }
 
-  ModalCondition() {
-    if(this.props.activeCard===null) {
-      return (
-        <div>No activeCard ya knob</div>
-      )
-    } else {
-      <Modal />
-    }
-  }
 
   SliderCondition() {
     if(this.props.profile==='Developer') {
@@ -46,9 +42,10 @@ class App extends Component {
   }
 
   render() {
+
     return (
       <div>
-        <Navigation />
+        <Navigation ref="NavBar"/>
           <ScrollEvent handleScrollCallback={this.handleScrollCallback} />
         {this.SliderCondition()}
         <CardsContainer />
@@ -57,6 +54,8 @@ class App extends Component {
     )
   }
 }
+
+
 
 function mapStateToProps(state) {
   return { activeCard: state.activeCard, profile: state.profile }
