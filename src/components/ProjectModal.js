@@ -50,7 +50,7 @@ class ProjectModal extends React.Component {
       let html=(`
       <div class="Modal-Container">
         <h1 id="developer-title">${props.title}</h1>
-
+        <img src=src/public/designer-fullsize/${props.fullsize} class="fullsize-image"/>
         <p>${props.description}</p>
         <ul>
           <li><b>Date:</b> ${props.date}</li>
@@ -59,14 +59,6 @@ class ProjectModal extends React.Component {
         </ul>
       </div>
       `);
-
-      // var title = document.getElementById('developer-title')
-      // console.log(title);
-      // var div = document.createElement("div");
-      // div.innerHTML = multipleImages(props);
-      // div.appendChild(element)
-      // html.appendChild(div);
-      //  return multipleImages(props);
       return html;
     }
 

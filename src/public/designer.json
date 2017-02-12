@@ -7,7 +7,7 @@
       "product": "T-Shirt/Sticker Design",
       "service": "Design",
       "thumbnail": "SanFranciscoBadge.png",
-      "fullsize": ["SanFranciscoBadge1.png", "SanFranciscoBadge2.png"]
+      "fullsize": "SanFranciscoBadge1.jpg"
 
     },
     {
@@ -16,7 +16,9 @@
       "date": "January 2017",
       "product": "Mobile App",
       "service": "Design, Illustration, UX, UI",
-      "thumbnail": "BeerMe.png"
+      "thumbnail": "BeerMe.png",
+      "fullsize": "BeerMe/Welcome.png"
+
     },
     {
       "title": "Ulti-Mate",
@@ -24,7 +26,8 @@
       "date": "December 2016",
       "product": "Marketing Material",
       "service": "Design",
-      "thumbnail": "Ulti-Mate.png"
+      "thumbnail": "Ulti-Mate.png",
+      "fullsize": "Ulti-Mate.png"
     },
     {
       "title": "Shades Of Shadow",
@@ -32,7 +35,8 @@
       "date": "August 2016",
       "product": "Album Cover Artwork",
       "service": "Design, Illustration",
-      "thumbnail": "ShadesOfShadow.png"
+      "thumbnail": "ShadesOfShadow.png",
+      "fullsize": "ShadesOfShadow1.png"
     },
     {
       "title": "Finding it And Losing It",
@@ -40,7 +44,8 @@
       "date": "June 2016",
       "product": "Single Cover Artwork",
       "service": "Design, Illustration",
-      "thumbnail": "FindingItAndLosingIt-Single.png"
+      "thumbnail": "FindingItAndLosingIt-Single.png",
+      "fullsize": "FindingItAndLosingIt-Single.jpg"
     },
     {
       "title": "Bonjour Hi",
@@ -48,7 +53,8 @@
       "date": "November 2015",
       "product": "Movie Poster",
       "service": "Design, Illustration, Marketing",
-      "thumbnail": "BonjourHi.png"
+      "thumbnail": "BonjourHi.png",
+      "fullsize": "BonjourHi.jpg"
     },
     {
       "title": "Volt",
@@ -56,7 +62,8 @@
       "date": "August 2015",
       "product": "Marketing Material",
       "service": "Design, Illustration, Marketing",
-      "thumbnail": "Volt.png"
+      "thumbnail": "Volt.png",
+      "fullsize": "Volt.png"
     },
     {
       "title": "Pacific Gold Agriculture",
@@ -64,7 +71,8 @@
       "date": "August 2015",
       "product": "Brand Logo",
       "service": "Design",
-      "thumbnail": "PacificGoldAgriculture.png"
+      "thumbnail": "PacificGoldAgriculture.png",
+      "fullsize": "PacificGoldAgriculture.png"
     }
   ]
 }
