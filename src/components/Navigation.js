@@ -18,18 +18,17 @@ class Navigation extends React.Component{
 
   }
 
-  componentDidMount() {
-    const NavBar = this.refs.NavBar;
-    const topOfNav = NavBar.offSetTop;
-
-    console.log(window.scrollY);
-  }
 
   handleScrollCallback(e) {
     const NavBar = this.refs.NavBar;
-    const topOfNav = NavBar.offSetTop;
+    const topOfNav = NavBar.offsetTop;
+    console.log(topOfNav, 'topOfNav');
 
-    console.log(window.scrollY);  }
+    if(window.scrollY >= topOfNav) {
+      document.body.style.paddingTop=NavBar.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav')
+    }
+  }
 
 
   handleClick(e) {
