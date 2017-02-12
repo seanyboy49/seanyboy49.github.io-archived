@@ -16,7 +16,7 @@ class About extends React.Component{
     const target = e.target
     const coords = target.getBoundingClientRect();
     document.body.append(toolTip);
-    toolTip.style.setProperty('top',`${coords.top -15}px`)
+    toolTip.style.setProperty('top',`${coords.top -30}px`)
     toolTip.style.setProperty('left',`${coords.left}px`)
     const tip = target.getAttribute('data-tip')
     toolTip.innerHTML=`<p>${tip}</p>`;
