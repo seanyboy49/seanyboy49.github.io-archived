@@ -19,14 +19,17 @@ class Navigation extends React.Component{
   }
 
 
-  handleScrollCallback(e) {
+  handleScrollCallback() {
     const NavBar = this.refs.NavBar;
     const topOfNav = NavBar.offsetTop;
-    console.log(topOfNav, 'topOfNav');
-
-    if(window.scrollY >= topOfNav) {
+    console.log('window.scrollyY', window.scrollY);
+    console.log('topOfNav', topOfNav);
+    if (window.scrollY > topOfNav) {
       document.body.style.paddingTop=NavBar.offsetHeight + 'px';
       document.body.classList.add('fixed-nav')
+    } else {
+      document.body.classList.remove('fixed-nav')
+      document.body.style.paddingTop = 0
     }
   }
 
@@ -40,15 +43,15 @@ class Navigation extends React.Component{
 
       <div >
         <ScrollEvent handleScrollCallback={this.handleScrollCallback} />
-
-        <ul id="nav-bar" ref="NavBar" >
-            <li className="panel logo"><a href="#">SEAN</a></li>
-            <li className="panel"> <Link to="/developer">Developer</Link></li>
-            <li className="panel"> <Link to="/designer">Designer</Link></li>
-            <li className="panel"> <Link to="/filmmaker">Filmmaker</Link></li>
-            <li className="panel"> <Link to="/about">About</Link></li>
-
+        <nav id="nav-bar" ref="NavBar" >
+        <ul>
+            <li className="logo"><a href="#">SEAN</a></li>
+            <li> <Link to="/developer">Developer</Link></li>
+            <li> <Link to="/designer">Designer</Link></li>
+            <li> <Link to="/filmmaker">Filmmaker</Link></li>
+            <li> <Link to="/about">About</Link></li>
         </ul>
+        </nav>
         {this.props.children}
       </div>
     )
