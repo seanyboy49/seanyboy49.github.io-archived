@@ -1,8 +1,9 @@
 
 
 .slider {
-  height: 450px;
+  /*min-width: 550px;*/
   width: 100%;
+  margin: 0;
   top: 0;
   bottom: 0;
-  }
+}
