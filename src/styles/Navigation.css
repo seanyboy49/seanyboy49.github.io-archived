@@ -21,7 +21,6 @@ a {
 }
 
 #nav-bar{
-  top: -5;
   margin: 0;
   position: relative;
   top: 0;
@@ -76,4 +75,16 @@ li.logo a {
 body.fixed-nav #nav-bar {
   position: fixed;
   box-shadow:0 5px 0 rgba(0,0,0,0.1);
+}
+
+/*mobile*/
+
+@media only screen and (max-width: 550px) {
+  #nav-bar a {
+    font-size: 12px;
+  }
+
+  #nav-bar a:hover {
+    font-size: 15px;
+  }
 }

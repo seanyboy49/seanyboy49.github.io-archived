@@ -4,7 +4,9 @@ class Filmmaker extends React.Component{
   render() {
     return(
       <div>
-        <img src="src/public/slider-images/Filmmaker-01.svg" className="slider"/>
+        <img src="src/public/slider-images/Filmmaker-01-01.png" className="slider"/>
+        <img src="src/public/slider-images/coming-soon-01.png" className="slider"/>
+
       </div>
     );
   }
