@@ -119,3 +119,18 @@ video {
   margin: auto;
   padding: 20px;
 }
+
+@media only screen and (max-width: 375px) {
+
+  .fullsize-image {
+    max-width: 230px;
+    margin: auto;
+  }
+
+  .Modal-Container {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+
+}
