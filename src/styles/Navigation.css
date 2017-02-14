@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+/*Info Bar*/
+#info-bar {
+  background-color: #ecf0f1;
+  font-size: 12px;
+  text-align: center;
+  height: 70px;
+  vertical-align: middle;
+}
+
+#info-text {
+  position: relative;
+  top: 20%;
+}
 
 /*Navigation*/
 #nav-bar a {
@@ -8,6 +21,8 @@
   transition: 0.1s;
   /*text-decoration: none;*/
 }
+
+
 
 #nav-bar a:hover {
   font-size: 22px;
@@ -42,7 +57,7 @@ nav li {
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 nav a {
@@ -79,12 +94,43 @@ body.fixed-nav #nav-bar {
 
 /*mobile*/
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 375px) {
   #nav-bar a {
     font-size: 12px;
   }
 
   #nav-bar a:hover {
     font-size: 15px;
+  }
+
+  #nav-bar {
+    height: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-bottom: 10px;
+
+  }
+  nav ul li {
+    height: 5vh;
+  }
+
+  nav ul li a {
+    bottom: -5px;
+  }
+
+  li.logo {
+    max-width:0;
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: all 0.5s;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  body.fixed-nav {
+    padding-top: 0;
   }
 }
