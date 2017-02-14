@@ -22,9 +22,10 @@ class Navigation extends React.Component{
   handleScrollCallback() {
     const NavBar = this.refs.NavBar;
     const topOfNav = NavBar.offsetTop;
-    console.log('window.scrollyY', window.scrollY);
-    console.log('topOfNav', topOfNav);
-    if (window.scrollY > topOfNav) {
+
+    const mq = window.matchMedia( "(min-width: 376px)" );
+
+    if (window.scrollY > topOfNav && mq.matches) {
       document.body.style.paddingTop=NavBar.offsetHeight + 'px';
       document.body.classList.add('fixed-nav')
     } else {
