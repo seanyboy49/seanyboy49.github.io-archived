@@ -85,3 +85,15 @@ ul {
   bottom: -10px;
   color: white;
 }
+
+@media only screen and (max-width: 375px) {
+
+  .about-content {
+    margin: auto;
+    width: 100%;
+    display: inline-block;
+    font-family: 'Roboto';
+  }
+
+
+}
