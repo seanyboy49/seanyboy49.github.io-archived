@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+/*Info Bar*/
+#info-bar {
+  background-color: #ecf0f1;
+  font-size: 12px;
+  text-align: center;
+  height: 70px;
+  vertical-align: middle;
+}
+
+#info-text {
+  position: relative;
+  top: 20%;
+}
 
 /*Navigation*/
 #nav-bar a {
@@ -8,6 +21,8 @@
   transition: 0.1s;
   /*text-decoration: none;*/
 }
+
+
 
 #nav-bar a:hover {
   font-size: 22px;

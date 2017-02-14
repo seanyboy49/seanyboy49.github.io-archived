@@ -54,6 +54,12 @@ class Navigation extends React.Component{
         </ul>
         </nav>
         {this.props.children}
+        <nav id="info-bar">
+          <div id="info-text">
+            <p> This portfolio site is built with React and hosted on GitHub pages. </p>
+            <p> Unless otherwise noted, all illustrations were done by Sean Lee. </p>
+          </div>
+        </nav>
       </div>
     )
   }
