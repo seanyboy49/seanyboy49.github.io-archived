@@ -1,6 +1,5 @@
 import React from 'react'
 import ProjectModal from './ProjectModal.js'
-import DeveloperModal from './DeveloperModal'
 
 class ProjectCard extends React.Component {
   constructor(props) {

@@ -36,17 +36,20 @@ class About extends React.Component{
         <section className="about-content">
           <p>It sounds like the beginning of a terrible joke, but it's actually my resume.</p>
           <p>
-            I am a San Francisco based web developer with an extensive background in design, filmmaking and marketing. A creative at heart, I'm drawn towards projects that use bold, beautiful design choices to improve human/technology interaction.
+            I am a San Francisco based software engineer with a background in design, filmmaking and marketing. A creative at heart, I'm particularly drawn towards the front-end and love using React to create beautiful user experiences.
           </p>
           <p>
-            While my skillset is full-stack, I am particularly excited by front-end technologies (particularly React) and user experience design. As a designer and filmmaker, I am your one-stop shop for all things creative: branding, logo creation, graphic design, web development, promotional videos, and much much more!
+            I am currently a software engineer at <strong><a href="https://wearefetch.com/">Fetch</a></strong>, where I'm developing and pitching dynamic product solutions, building chat bots and AR apps, and creating lots of internal tools for every department. 
+          </p>
+          <p>
+          As a designer and filmmaker, I am your one-stop shop for all things creative: branding, logo creation, graphic design, web development, promotional videos, and much much more!
           </p>
           <p>
             Feel free to get in touch!
-          </p>
-          <p>
             Email me at seanboramlee@gmail.com
           </p>
+
+
         </section>
 
         <ul className="key-stats">
