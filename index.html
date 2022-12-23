@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sean Boram Lee</title>
-    <link rel="stylesheet" href="/src/styles/Navigation.css">
-    <link rel="stylesheet" href="/src/styles/DeveloperProjectCard.css">
-    <link rel="stylesheet" href="/src/styles/Slider.css">
-    <link rel="stylesheet" href="/src/styles/About.css">
 
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
-    <meta name="description" content="Sean Lee's Personal Website">
-
-
+    <meta name="description" content="Sean Lee's Personal Website" />
 
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
@@ -28,35 +22,40 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
-      (function(l) {
+      (function (l) {
         if (l.search) {
           var q = {};
-          l.search.slice(1).split('&').forEach(function(v) {
-            var a = v.split('=');
-            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-          });
+          l.search
+            .slice(1)
+            .split("&")
+            .forEach(function (v) {
+              var a = v.split("=");
+              q[a[0]] = a.slice(1).join("=").replace(/~and~/g, "&");
+            });
           if (q.p !== undefined) {
-            window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + (q.p || '') +
-              (q.q ? ('?' + q.q) : '') +
-              l.hash
+            window.history.replaceState(
+              null,
+              null,
+              l.pathname.slice(0, -1) +
+                (q.p || "") +
+                (q.q ? "?" + q.q : "") +
+                l.hash
             );
           }
         }
-      }(window.location))
+      })(window.location);
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
 
     <!-- Basic Styling -->
     <style>
-    html body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Montserrat';
-    }
+      html body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Montserrat";
+      }
     </style>
-
   </head>
   <body>
     <div id="root"></div>
